@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   '@tanstack/history': workspace:*
   '@tanstack/react-router': workspace:*
@@ -35,8 +39,8 @@ importers:
         specifier: ^0.34.3
         version: 0.34.3
       zod:
-        specifier: ^3.20.2
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@babel/core':
         specifier: ^7.17.9
@@ -283,8 +287,8 @@ importers:
         specifier: ^2.8.6
         version: 2.8.6
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -356,8 +360,8 @@ importers:
         specifier: ^2.8.6
         version: 2.8.6
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -481,8 +485,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.15
       zod:
-        specifier: ^3.19.1
-        version: 3.19.1
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -901,8 +905,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.15
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.14
@@ -1050,8 +1054,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.15
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1229,8 +1233,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.16
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1296,8 +1300,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.16
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1363,8 +1367,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.16
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1430,8 +1434,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.16
       zod:
-        specifier: ^3.19.1
-        version: 3.20.2
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1703,8 +1707,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.15
       zod:
-        specifier: ^3.19.1
-        version: 3.19.1
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.25
@@ -1788,8 +1792,8 @@ importers:
         specifier: ^2.8.6
         version: 2.9.15
       zod:
-        specifier: ^3.19.1
-        version: 3.19.1
+        specifier: ^3.22.3
+        version: 3.22.3
     devDependencies:
       '@types/react':
         specifier: ^18.0.14
@@ -1817,6 +1821,12 @@ importers:
       '@tanstack/history':
         specifier: workspace:*
         version: link:../history
+      react:
+        specifier: '>=16'
+        version: 18.2.0
+      react-dom:
+        specifier: '>=16'
+        version: 18.2.0(react@18.2.0)
       tiny-invariant:
         specifier: ^1.3.1
         version: 1.3.1
@@ -1884,8 +1894,8 @@ importers:
         specifier: ^17.6.2
         version: 17.6.2
       zod:
-        specifier: ^3.19.1
-        version: 3.21.4
+        specifier: ^3.22.3
+        version: 3.22.3
 
   packages/router-devtools:
     dependencies:
@@ -1898,6 +1908,12 @@ importers:
       date-fns:
         specifier: ^2.29.1
         version: 2.29.3
+      react:
+        specifier: '>=16'
+        version: 18.2.0
+      react-dom:
+        specifier: '>=16'
+        version: 18.2.0(react@18.2.0)
 
 packages:
 
@@ -3403,6 +3419,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -10837,18 +10854,6 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /zod@3.19.1:
-    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
+  /zod@3.22.3:
+    resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
     dev: false
-
-  /zod@3.20.2:
-    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
-    dev: false
-
-  /zod@3.21.4:
-    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-    dev: false
-
-settings:
-  autoInstallPeers: false
-  excludeLinksFromLockfile: false
